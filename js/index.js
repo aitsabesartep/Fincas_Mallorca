@@ -134,7 +134,6 @@ function initCalendaris() {
     });
 }
 */
-var entrada;
 function initCalendaris(){
     var from_$input = $('#from').pickadate({
         format: 'dd/mm/yyyy'
@@ -172,4 +171,164 @@ function initCalendaris(){
         from_picker.set('max', false)
       }
     })
+}
+
+function initCos(xml){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            $("#cos").html(xhttp.responseText);
+            $("#cont_finques").html(xml);
+            removeIndex();
+            actualitzarMenu(1);
+            initCalendaris();
+        }   
+    };
+    xhttp.open("GET", "cos.html", true);
+    xhttp.send();
+}
+
+function loadFincasBuscar(st){
+    console.log(st);
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            initCos(xhttp.responseText);
+        }
+    };
+    var str = 'php/fincas_filtros.php?doc='+st;
+    xhttp.open("GET", str, true);
+    xhttp.send();
+}
+
+function processarHome(xml){
+    var xmlDoc = xml.responseXML;
+    var fincas = xmlDoc.getElementsByTagName("finca");
+    var tots = [];
+    var eliminar = [];
+
+    var i;
+    for (i = 0; i < fincas.length; i++) {
+        var codi = fincas[i].getElementsByTagName('codi')[0].textContent;
+        tots.push(codi);
+        if (eliminar.indexOf(codi) == -1 && document.getElementById('personas_f').selectedIndex != '0') {
+            if (parseInt(fincas[i].getElementsByTagName('capacidad_personas')[0].textContent) < parseInt(document.getElementById("personas_f").value)) {
+                eliminar.push(codi);
+            }
+        }
+        if (eliminar.indexOf(codi) == -1 && document.getElementById('tipo_f').selectedIndex != '0') {
+            var carac = document.getElementById("tipo_f").value;
+            if (document.getElementById("tipo_f").value == 'Finca' && fincas[i].getElementsByTagName('finc')[0] == null) {
+                eliminar.push(codi);
+            }else if (document.getElementById("tipo_f").value == 'Casa' && fincas[i].getElementsByTagName('casa')[0] == null) {
+                eliminar.push(codi);
+            }else if (document.getElementById("tipo_f").value == 'Apartamento' && fincas[i].getElementsByTagName('apartamento')[0] == null) {
+                eliminar.push(codi);
+            }
+        }
+        var calendario = (fincas[i].getElementsByTagName('calendario')[0]);
+        if (eliminar.indexOf(codi) == -1 && calendario.getElementsByTagName('registre').length > 0 && $('#from').val() != '' && $('#to').val() == '') {
+            var registres = calendario.getElementsByTagName('registre');
+            var m;
+            for (m = 0; m < registres.length; m++) {
+                var dia = parseInt(registres[m].getElementsByTagName('dia')[0].textContent);
+                var mes = parseInt(registres[m].getElementsByTagName('mes')[0].textContent);
+                //Restam -1 xq es més comença a 0
+                mes = mes - 1;
+                var any = parseInt(registres[m].getElementsByTagName('any')[0].textContent);
+                var cuants = parseInt(registres[m].getElementsByTagName('ndias')[0].textContent);
+                var d_from = new Date(any, mes, dia);
+                var d_to = new Date(d_from.getTime());
+                var d_check = new Date(d_from.getTime());
+                d_to.setDate(d_to.getDate() + cuants - 1);
+                var check = $('#from').val();
+                var check1 = check.split("/");
+                d_check.setDate(check1[0]);
+                d_check.setMonth(check1[1]-1);
+                d_check.setFullYear(check1[2]);
+                if (d_from <= d_check && d_check <= d_to) {
+                    eliminar.push(codi);
+                }
+            }
+        }else if (eliminar.indexOf(codi) == -1 && calendario.getElementsByTagName('registre').length > 0 && $('#from').val() != '' && $('#to').val() != '') {
+            var registres = calendario.getElementsByTagName('registre');
+            var m;
+            for (m = 0; m < registres.length; m++) {
+                var dia = parseInt(registres[m].getElementsByTagName('dia')[0].textContent);
+                var mes = parseInt(registres[m].getElementsByTagName('mes')[0].textContent);
+                //Restam -1 xq es més comença a 0
+                mes = mes - 1;
+                var any = parseInt(registres[m].getElementsByTagName('any')[0].textContent);
+                var cuants = parseInt(registres[m].getElementsByTagName('ndias')[0].textContent);
+                var d_from = new Date(any, mes, dia);
+                var d_to = new Date(d_from.getTime());
+                var d_check = new Date(d_from.getTime());
+                var d_check2 = new Date(d_from.getTime());
+                d_to.setDate(d_to.getDate() + cuants - 1);
+                var check = $('#from').val();
+                var check1 = check.split("/");
+                d_check.setDate(check1[0]);
+                d_check.setMonth(check1[1]-1);
+                d_check.setFullYear(check1[2]);
+                check = $('#to').val();
+                check1 = check.split("/");
+                d_check2.setDate(check1[0]);
+                d_check2.setMonth(check1[1]-1);
+                d_check2.setFullYear(check1[2]);
+                if ((d_check <= d_from && d_from <= d_check2) || (d_check <= d_to && d_to <= d_check2)) {
+                    eliminar.push(codi);
+                }
+            }
+        }else if (eliminar.indexOf(codi) == -1 && calendario.getElementsByTagName('registre').length > 0 && $('#from').val() == '' && $('#to').val() != '') {
+            var registres = calendario.getElementsByTagName('registre');
+            var m;
+            for (m = 0; m < registres.length; m++) {
+                var dia = parseInt(registres[m].getElementsByTagName('dia')[0].textContent);
+                var mes = parseInt(registres[m].getElementsByTagName('mes')[0].textContent);
+                //Restam -1 xq es més comença a 0
+                mes = mes - 1;
+                var any = parseInt(registres[m].getElementsByTagName('any')[0].textContent);
+                var cuants = parseInt(registres[m].getElementsByTagName('ndias')[0].textContent);
+                var d_from = new Date(any, mes, dia);
+                var d_to = new Date(d_from.getTime());
+                var d_check = new Date(d_from.getTime());
+                d_to.setDate(d_to.getDate() + cuants - 1);
+                var check = $('#to').val();
+                var check1 = check.split("/");
+                d_check.setDate(check1[0]);
+                d_check.setMonth(check1[1]-1);
+                d_check.setFullYear(check1[2]);
+                if (d_from <= d_check && d_check <= d_to) {
+                    eliminar.push(codi);
+                }
+            }
+        }
+    }
+
+    //Seleccionam els que no estan dins eliminar
+    var str = null;
+    for (i = 0; i < tots.length; i++) {
+        if (eliminar.indexOf(tots[i]) == -1) {
+            if (str == null) {
+                str = tots[i];
+            }else{
+                str = str + '-' +tots[i];    
+            }
+        }
+    }
+
+    loadFincasBuscar(str);
+}
+
+
+function filtrarHome(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            processarHome(xhttp);
+        }
+    };
+    xhttp.open("GET", "xml/fincas.xml", true);
+    xhttp.send();
+    return false;
 }

@@ -1,6 +1,6 @@
 <div id="principal" class="col-sx-12 col-sm-12 col-md-12 col-lg-12 col-centered">
   <div class="text-center">
-    <form action="" id="menu" class="form-inline" role="form">
+    <form action="" id="menu" class="form-inline" role="form" method="GET" onsubmit='return filtrarHome();'>
         <div id="element" class="form-group input-group">
            <span class="input-group-addon data_fincas" role="button"><i class="glyphicon glyphicon-calendar"></i></span>
            <input id="from" class="form-control data_fincas" role="button" name='salida' placeholder="Dia entrada" readonly="true"/>
@@ -12,7 +12,7 @@
          </div>
 
          <div id="element" class="form-group input-group calendariinici">
-             <select class="form-control">
+             <select id="personas_f" class="form-control">
                  <option>Personas</option>
                  <option>1 persona</option>
                  <option>2 personas</option>
@@ -27,7 +27,7 @@
              </select>
          </div>
          <div id="element" class="form-group input-group">
-             <select class="form-control">
+             <select id="tipo_f" class="form-control">
                  <option>Tipo</option>
                  <option>Finca</option>
                  <option>Casa</option>

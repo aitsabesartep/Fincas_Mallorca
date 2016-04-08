@@ -329,6 +329,21 @@
                             img/icon/clean.svg
                         </xsl:attribute>
                     </xsl:when>
+                    <xsl:when test='$param="Yacuzzi"'>
+                        <xsl:attribute name="src">
+                            img/icon/yacuzzi.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Perros"'>
+                        <xsl:attribute name="src">
+                            img/icon/dog.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Mar"'>
+                        <xsl:attribute name="src">
+                            img/icon/sea.svg
+                        </xsl:attribute>
+                    </xsl:when>
                 </xsl:choose>
                 </img>
             </span><p id="carac">&#160;
