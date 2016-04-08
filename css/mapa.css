@@ -1,0 +1,15 @@
+div#cos_mapa{
+	margin-bottom: 25px;
+	width: 80%;
+}
+
+@media (max-width: 800px) {
+	div#contingut{
+		margin-top: 50px;
+		width: 100%;
+	}
+}
+
+div#content{
+	width: 500px;
+}

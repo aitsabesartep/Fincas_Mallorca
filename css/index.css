@@ -1,0 +1,64 @@
+body#inici{
+    height: 100%;
+    background: none;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+div#principal{
+  background: rgba(255, 166, 0, 0.7)!important;
+  height: 100%;
+  max-width: 60%;
+  display: table;
+  margin-top: 150px;
+  border-radius: 15px
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+  div#principal{
+    background: rgba(255, 166, 0, 0.7)!important;
+    height: 100%;
+    max-width: 60%;
+    display: table;
+    margin-top: 100px;
+    border-radius: 15px
+  }
+}
+
+@media (max-width: 500px) and (orientation: landscape) {
+  div#principal{
+    background: rgba(255, 166, 0, 0.7)!important;
+    height: 100%;
+    max-width: 60%;
+    display: table;
+    margin-top: 75px;
+    border-radius: 15px
+  }
+}
+
+form#menu{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+div#element{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 140px;
+}
+
+.calendariinici{
+  min-width: 100px;
+  max-width: 140px;
+}
+
+.ui-datepicker-month{
+  background-color: orange;
+  border-color: white;
+}
+
+a#ln{
+  cursor: pointer;
+}

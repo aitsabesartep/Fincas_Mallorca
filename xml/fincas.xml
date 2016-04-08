@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl"?>
+<!DOCTYPE fincas SYSTEM "xml/finca.dtd">
+<fincas>
+  <finca>
+    <codi>0</codi>
+    <codi_propietari>1</codi_propietari>
+    <tipo>
+      <casa>1</casa>
+    </tipo>
+    <nombre>Oasis</nombre>
+    <imagenes>
+      <url>img/img_fincas/oasis/img/img0.jpg</url>
+      <url>img/img_fincas/oasis/img/img1.jpg</url>
+      <url>img/img_fincas/oasis/img/img2.jpg</url>
+      <url>img/img_fincas/oasis/img/img3.jpg</url>
+      <url>img/img_fincas/oasis/img/img4.jpg</url>
+      <url>img/img_fincas/oasis/img/img5.jpg</url>
+      <url>img/img_fincas/oasis/img/img6.jpg</url>
+      <url>img/img_fincas/oasis/img/img7.jpg</url>
+      <url>img/img_fincas/oasis/img/img8.jpg</url>
+      <url>img/img_fincas/oasis/img/img9.jpg</url>
+      <url>img/img_fincas/oasis/img/img10.jpg</url>
+      <url>img/img_fincas/oasis/img/img11.jpg</url>
+      <url>img/img_fincas/oasis/img/img12.jpg</url>
+      <url>img/img_fincas/oasis/img/img13.jpg</url>
+      <url>img/img_fincas/oasis/img/img14.jpg</url>
+      <url>img/img_fincas/oasis/img/img15.jpg</url>
+    </imagenes>
+    <descripcion>
+      La propiedad es del siglo XI y desde el siglo XV es propiedad de la misma familia, y es de momento una de las pocas propiedades de ese tamaño que están disponibles exclusivamente en el mercado.
+
+      El terreno con 2.882,9 hectáreas a los pies de Tramuntana cerca de Caimairi-Binibona en la comunidad de Selva incluye varias superficies de uso agrícola así como la histórica propiedad con más de 2.000 metros cuadrados de superficie habitable total, dividida en varios edificios, terrazas y piscina, así como una residencia privada e independiente de 400 metros cuadrados.
+
+      El terreno puede funcionar lucrativamente o ser usado como un idilio muy privado en Mallorca.
+
+      Las vistas y el entorno son soñados, usted entra en un mundo de antaño, en el que los secretos de las generaciones están firmemente anclados en los gruesos muros de piedra que lo componen. Cruce el patio adoquinado pasando por las fuentes medievales y admire las Almanzaras (2 prensas de aceite están disponibles) y descubra una sensación de vida nueva y original en la isla.
+    </descripcion>
+    <poblacion>Santa Eugènia</poblacion>
+    <coordenadas>
+      <longitud>2.847707</longitud>
+      <latitud>39.618571</latitud>
+    </coordenadas>
+    <capacidad_personas>12</capacidad_personas>
+    <metros_casa>300</metros_casa>
+    <metros_terreno>2000</metros_terreno>
+    <num_habitaciones>8</num_habitaciones>
+    <num_banyos>8</num_banyos>
+    <servicios>
+      <yacuzzi>Yacuzzi</yacuzzi>
+      <perros>Perros</perros>
+      <piscina>Piscina</piscina>
+      <climatizacion>Climatizacion</climatizacion>
+      <barbacoa>Barbacoa</barbacoa>
+      <cocina>
+        <tostadora>1</tostadora>
+        <horno>1</horno>
+        <nevera>1</nevera>
+        <congelador>1</congelador>
+      </cocina>
+    </servicios>
+    <hora>
+      <entrada>14:00</entrada>
+      <salida>10:00</salida>
+    </hora>
+    <calendario>
+    </calendario>
+    <precio>
+      <enero>80</enero>
+      <febrero>80</febrero>
+      <marzo>90</marzo>
+      <abril>90</abril>
+      <mayo>100</mayo>
+      <junio>100</junio>
+      <julio>150</julio>
+      <agosto>150</agosto>
+      <septiembre>100</septiembre>
+      <octubre>100</octubre>
+      <noviembre>80</noviembre>
+      <diciembre>80</diciembre>
+    </precio>
+    <comentarios>
+      <comentario>
+        <name>hoola</name>
+        <opinion>fdsfsd</opinion>
+        <valoracion>3</valoracion>
+      </comentario>
+      <comentario>
+        <name>11</name>
+        <opinion>sfds</opinion>
+        <valoracion>3</valoracion>
+      </comentario>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>1</codi>
+    <codi_propietari>1</codi_propietari>
+    <tipo>
+      <finc>1</finc>
+      <casa>1</casa>
+    </tipo>
+    <nombre>Casa del Mar</nombre>
+    <imagenes>
+      <url>img/img_fincas/Casa_Del_Mar/img/img0.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img1.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img2.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img3.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img4.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img5.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img6.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img7.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img8.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img9.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img10.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img/img11.jpg</url>
+    </imagenes>
+    <descripcion>
+      Esta finca espaciosa con vistas al mar está ubicada en Ses Salines (el centro se alcanza a pie) y es idónea para familias grandes.
+
+      La superficie habitable de aprox. 230 metros cuadrados está dividida en 6 dormitorios, 4 baños, biblioteca, salón, comedor y una cocina. Además, la propiedad ofrece un apartamento de invitados integrado y uno separado, lo que ofrece muchas posibilidades como por ejemplo el alquiler vacacional.
+
+      En el exterior encontramos una piscina preciosa con vistas al jardín así como un establo.
+
+      Esta finca ofrece todas las comodidades y está equipada con suelos de mármol y calefacción.
+      Lugar y alrededores:
+      Ses Salines es uno de los pueblos más bonitos y antiguos en la costa sureste de Mallorca. La imagen del pueblo se caracteriza por los agradables bares y restaurantes donde mallorquines y turistas toman su café con leche al disfrutar del sol.
+
+      Es un pueblo típico mallorquín que recibe su nombre de las salinas del tiempo romano. Hasta la fecha se cosecha sal de ellas. Los talayotes, vestigios de un asentamiento prehistórico, también son muy interesantes.
+
+      Muchas calas pequeñas como la de Cala Llombards y la playas natural de Es Trenc están a pocos minutos en coche. También puede descubrir el paisaje precioso y plano con la bicicleta.
+
+      Este mapa muestra la situación de la propiedad en la visión general. Mallorca. Hemos recopilado una selección de las Playas, Campos de golf, Puertos Deportivos y Restaurantes más atractivos.
+    </descripcion>
+    <poblacion>Son Serra</poblacion>
+    <coordenadas>
+      <longitud>3.223770</longitud>
+      <latitud>39.737699</latitud>
+    </coordenadas>
+    <capacidad_personas>5</capacidad_personas>
+    <metros_casa>120</metros_casa>
+    <metros_terreno>1300</metros_terreno>
+    <num_habitaciones>4</num_habitaciones>
+    <num_banyos>5</num_banyos>
+    <servicios>
+      <mar>Mar</mar>
+      <internet>Internet</internet>
+      <piscina>Piscina</piscina>
+      <television>TV</television>
+      <barbacoa>Barbacoa</barbacoa>
+    </servicios>
+    <calendario>
+    </calendario>
+    <precio>
+      <enero>240</enero>
+      <febrero>110</febrero>
+      <marzo>110</marzo>
+      <abril>150</abril>
+      <mayo>160</mayo>
+      <junio>180</junio>
+      <julio>200</julio>
+      <agosto>200</agosto>
+      <septiembre>180</septiembre>
+      <octubre>160</octubre>
+      <noviembre>150</noviembre>
+      <diciembre>140</diciembre>
+    </precio>
+    <comentarios>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>2</codi>
+    <codi_propietari>2</codi_propietari>
+    <tipo>
+      <finc>1</finc>
+    </tipo>
+    <nombre>Hort Riu</nombre>
+    <imagenes>
+      <url>img/img_fincas/Hort_Riu/img/img0.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img1.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img2.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img3.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img4.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img5.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img6.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img7.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img8.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img9.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img10.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img11.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img12.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img13.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img14.jpg</url>
+      <url>img/img_fincas/Hort_Riu/img/img15.jpg</url>
+    </imagenes>
+    <descripcion>
+      Esta finca exclusiva está a pocos metros de la famosa playa de ensueño de Es Trenc, en medio de un solar con vegetación mediterránea y por lo tanto con mucha privacidad, en la reserva natural entre Sa Rapita y Ses Covetes. Es un curiosidad tener la posibilidad de comprar una finca tan espaciosa y tan cerca de Es Trenc.
+
+      La propiedad consiste de una villa con un apartamento de invitados separado así como de 2 casas para invitados más pequeñas. El área de la piscina de aprox. 150 metros cuadrados está ubicada en el centro y ofrece una cascada, un jacuzzi y un bar rodeado de palmeras.
+
+      La casa principal al estilo colonial español de aprox. 150 metros cuadrados con algunos muebles antiguos dispone de un salón, 2 dormitorios, un comedor con una cocina abierta y un baño. La casa ha sido equipada con mucho amor a materiales clásicos como el mármol, la piedra y la madera. Aquí también encuentra el acceso a la bodega. Terrazas grandes y abiertas, todas orientadas hacia la piscina, completan la casa principal.
+
+      Con una entrada separada sobre la vivienda principal, usted encuentra un piso pequeño en la planta superior que consta de un salón, comedor y un baño así como de una terraza propia para ahí poder pasar horas agradables.
+
+      La casa de invitados original al estilo mallorquín en aprox. 40 metros cuadrados ofrece una cocina con un dormitorio separado, un baño y una terraza pequeña. La otra casa de invitados está un poco apartado y en una superficie total de aprox. 70 metros cuadrados comprende 2 dormitorios, 2 baños y otro salón con una cocina abierta que ha sido bien diseñada y ofrece una chimenea abierta y un lagar antiguo.
+
+      En el extremo del solar encontramos establos a reformar con un prado pequeño para 2 caballos con los que directamente puede montar a caballo en las dunas de Es Trenc.
+
+      En el otro extremo del solar hay un carport doble. En 3 accesos separados tiene más espacios de aparcamiento. El solar tiene un total de 31.000 metros cuadrados. La superficie habitable total es de 580 metros cuadrados. La finca dispone de un pozo propio, más naturalmente está conectada a la red pública de electricidad y agua.
+    </descripcion>
+    <poblacion>Son Serra</poblacion>
+    <coordenadas>
+      <longitud>3.235163</longitud>
+      <latitud>39.730964</latitud>
+    </coordenadas>
+    <capacidad_personas>12</capacidad_personas>
+    <metros_casa>300</metros_casa>
+    <metros_terreno>3000</metros_terreno>
+    <num_habitaciones>10</num_habitaciones>
+    <num_banyos>8</num_banyos>
+    <servicios>
+      <internet>Internet</internet>
+      <piscina>Piscina</piscina>
+      <limpieza>Limpieza</limpieza>
+      <climatizacion/>
+      <television>TV</television>
+      <cocina>
+        <tostadora>Tostadora</tostadora>
+        <horno>Horno</horno>
+        <lavavajillas>Lavavajillas</lavavajillas>
+      </cocina>
+    </servicios>
+    <hora>
+      <entrada>9:00</entrada>
+      <salida>9:00</salida>
+    </hora>
+    <calendario>
+    </calendario>
+    <precio>
+      <enero>160</enero>
+      <febrero>210</febrero>
+      <marzo>210</marzo>
+      <abril>333</abril>
+      <mayo>345</mayo>
+      <junio>350</junio>
+      <julio>380</julio>
+      <agosto>400</agosto>
+      <septiembre>400</septiembre>
+      <octubre>400</octubre>
+      <noviembre>360</noviembre>
+      <diciembre>100</diciembre>
+    </precio>
+    <comentarios>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>3</codi>
+    <codi_propietari>3</codi_propietari>
+    <tipo>
+      <casa>1</casa>
+      <apartamento>1</apartamento>
+    </tipo>
+    <nombre>Sant Martí</nombre>
+    <imagenes>
+      <url>img/img_fincas/Sant_Marti/img/img0.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img1.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img2.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img3.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img4.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img5.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img6.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img7.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img8.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img9.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img10.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img11.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img12.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img13.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img14.jpg</url>
+      <url>img/img_fincas/Sant_Marti/img/img15.jpg</url>
+    </imagenes>
+    <descripcion>
+      Esta finca lujosa y de alta calidad está situada en medio de un hermoso jardín y está rodeada de un solar de 18.500 metros cuadrados. Las amplias terrazas y balcones ofrecen vistas lejanas hasta el mar.
+
+      El jardín muy bien cuidado cuenta con árboles de almendra, de oliva-algarrobo y de higuera, así como con palmeras y arbustos de lavanda. Este es el lugar perfecto para la piscina (10 x 5 metros) con escaleras. El diseño de la zona de la piscina se puede cambiar en cualquier momento en una zona de césped, la capa superior del suelo ya está disponible.
+
+      La parte delantera de la casa se presenta muy señorial, con una cocina de verano muy bien equipada, con una zona de estar cubierta y con muchas plazas de aparcamiento (garaje doble, 6-8 plazas). A la finca se entra a través del patio. La elegante finca cuenta con una superficie habitable de 450 metros cuadrados, distribuidos en planta baja y primera planta.
+
+      En la planta baja se encuentran la sala de estar con una cocina de estilo rústico, equipada con lavavajillas, frigorífico-congelador y con un horno a gas eléctrico. También se puede encontrar un amplio dormitorio con baño en suite en esta planta.
+
+      La planta superior dispone de 3 dormitorios dobles con un baño en suite cada uno. Una de las habitaciones dispone de una entrada propia y podría ser utilizada como un apartamento individual. Además se pueden encontrar un estudio separado con un dormitorio y un baño.
+
+      La propiedad fue diseñada con mármol y está equipada con un suelo radiante. Además cuenta con un pre- instalación de aire acondicionado en todas las habitaciones y un sistema de alarma con una cámara y un detector de movimiento.
+
+      Un pozo propio y una cisterna con una capacidad de almacenamiento de 40.000 l proporcionan la casa con agua, una conexión de electricidad está disponible.
+    </descripcion>
+    <poblacion>Son Serra</poblacion>
+    <coordenadas>
+      <longitud>3.219928</longitud>
+      <latitud>39.739256</latitud>
+    </coordenadas>
+    <capacidad_personas>5</capacidad_personas>
+    <metros_casa>120</metros_casa>
+    <metros_terreno>200</metros_terreno>
+    <num_habitaciones>4</num_habitaciones>
+    <num_banyos>4</num_banyos>
+    <servicios>
+      <internet>Internet</internet>
+      <limpieza>Limpieza</limpieza>
+      <climatizacion>Climatizacion</climatizacion>
+      <television>TV</television>
+      <barbacoa>Barbacoa</barbacoa>
+      <cocina>
+        <horno>Horno</horno>
+        <lavavajillas/>
+        <cafetera>Cafetera</cafetera>
+        <nevera>Nevera</nevera>
+        <congelador>Congelador</congelador>
+      </cocina>
+    </servicios>
+    <hora>
+      <entrada>19:00</entrada>
+      <salida>14:00</salida>
+    </hora>
+    <calendario>
+    </calendario>
+    <precio>
+      <enero>50</enero>
+      <febrero>50</febrero>
+      <marzo>50</marzo>
+      <abril>70</abril>
+      <mayo>70</mayo>
+      <junio>100</junio>
+      <julio>120</julio>
+      <agosto>120</agosto>
+      <septiembre>100</septiembre>
+      <octubre>80</octubre>
+      <noviembre>50</noviembre>
+      <diciembre>50</diciembre>
+    </precio>
+    <comentarios>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>4</codi>
+    <codi_propietari>3</codi_propietari>
+    <tipo>
+      <finc>1</finc>
+    </tipo>
+    <nombre>Son Burget</nombre>
+    <imagenes>
+      <url>img/img_fincas/Son_Burget/img/img0.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img1.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img2.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img3.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img4.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img5.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img6.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img7.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img8.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img9.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img10.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img11.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img12.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img13.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img14.jpg</url>
+      <url>img/img_fincas/Son_Burget/img/img15.jpg</url>
+    </imagenes>
+    <descripcion>
+      Esta finca espaciosa con vistas al mar está ubicada en Ses Salines (el centro se alcanza a pie) y es idónea para familias grandes.
+
+      La superficie habitable de aprox. 230 metros cuadrados está dividida en 6 dormitorios, 4 baños, biblioteca, salón, comedor y una cocina. Además, la propiedad ofrece un apartamento de invitados integrado y uno separado, lo que ofrece muchas posibilidades como por ejemplo el alquiler vacacional.
+
+      En el exterior encontramos una piscina preciosa con vistas al jardín así como un establo.
+
+      Esta finca ofrece todas las comodidades y está equipada con suelos de mármol y calefacción.
+
+      Lugar y alrededores:
+
+      Ses Salines es uno de los pueblos más bonitos y antiguos en la costa sureste de Mallorca. La imagen del pueblo se caracteriza por los agradables bares y restaurantes donde mallorquines y turistas toman su café con leche al disfrutar del sol.
+
+      Es un pueblo típico mallorquín que recibe su nombre de las salinas del tiempo romano. Hasta la fecha se cosecha sal de ellas. Los talayotes, vestigios de un asentamiento prehistórico, también son muy interesantes.
+
+      Muchas calas pequeñas como la de Cala Llombards y la playas natural de Es Trenc están a pocos minutos en coche. También puede descubrir el paisaje precioso y plano con la bicicleta.
+
+      Este mapa muestra la situación de la propiedad en la visión general. Mallorca. Hemos recopilado una selección de las Playas, Campos de golf, Puertos Deportivos y Restaurantes más atractivos.
+    </descripcion>
+    <poblacion>Portocolom</poblacion>
+    <coordenadas>
+      <longitud>3.257466</longitud>
+      <latitud>39.420332</latitud>
+    </coordenadas>
+    <capacidad_personas>8</capacidad_personas>
+    <metros_casa>400</metros_casa>
+    <metros_terreno>4000</metros_terreno>
+    <num_habitaciones>8</num_habitaciones>
+    <num_banyos>6</num_banyos>
+    <servicios>
+      <piscina>Piscina</piscina>
+      <lavadora>Lavadora</lavadora>
+      <barbacoa>Barbacoa</barbacoa>
+      <cocina>
+        <lavavajillas>Lavavajillas</lavavajillas>
+        <microondas>Microondas</microondas>
+        <nevera>Nevera</nevera>
+      </cocina>
+    </servicios>
+    <calendario>
+    </calendario>
+    <precio>
+      <enero>400</enero>
+      <febrero>400</febrero>
+      <marzo>400</marzo>
+      <abril>550</abril>
+      <mayo>550</mayo>
+      <junio>600</junio>
+      <julio>600</julio>
+      <agosto>700</agosto>
+      <septiembre>550</septiembre>
+      <octubre>550</octubre>
+      <noviembre>200</noviembre>
+      <diciembre>200</diciembre>
+    </precio>
+    <comentarios>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>5</codi>
+    <codi_propietari>4</codi_propietari>
+    <tipo>
+      <casa>1</casa>
+      <apartamento>1</apartamento>
+    </tipo>
+    <nombre>Finca Tanca Vella</nombre>
+    <imagenes>
+      <url>img/img_fincas/Tanca_Vella/img/img0.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img1.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img2.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img3.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img4.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img5.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img6.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img7.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img8.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img9.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img10.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img11.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img12.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img13.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img14.jpg</url>
+      <url>img/img_fincas/Tanca_Vella/img/img15.jpg</url>
+    </imagenes>
+    <descripcion>
+      Esta finca exclusiva está a pocos metros de la famosa playa de ensueño de Es Trenc, en medio de un solar con vegetación mediterránea y por lo tanto con mucha privacidad, en la reserva natural entre Sa Rapita y Ses Covetes. Es un curiosidad tener la posibilidad de comprar una finca tan espaciosa y tan cerca de Es Trenc.
+
+      La propiedad consiste de una villa con un apartamento de invitados separado así como de 2 casas para invitados más pequeñas. El área de la piscina de aprox. 150 metros cuadrados está ubicada en el centro y ofrece una cascada, un jacuzzi y un bar rodeado de palmeras.
+
+      La casa principal al estilo colonial español de aprox. 150 metros cuadrados con algunos muebles antiguos dispone de un salón, 2 dormitorios, un comedor con una cocina abierta y un baño. La casa ha sido equipada con mucho amor a materiales clásicos como el mármol, la piedra y la madera. Aquí también encuentra el acceso a la bodega. Terrazas grandes y abiertas, todas orientadas hacia la piscina, completan la casa principal.
+
+      Con una entrada separada sobre la vivienda principal, usted encuentra un piso pequeño en la planta superior que consta de un salón, comedor y un baño así como de una terraza propia para ahí poder pasar horas agradables.
+
+      La casa de invitados original al estilo mallorquín en aprox. 40 metros cuadrados ofrece una cocina con un dormitorio separado, un baño y una terraza pequeña. La otra casa de invitados está un poco apartado y en una superficie total de aprox. 70 metros cuadrados comprende 2 dormitorios, 2 baños y otro salón con una cocina abierta que ha sido bien diseñada y ofrece una chimenea abierta y un lagar antiguo.
+
+      En el extremo del solar encontramos establos a reformar con un prado pequeño para 2 caballos con los que directamente puede montar a caballo en las dunas de Es Trenc.
+
+      En el otro extremo del solar hay un carport doble. En 3 accesos separados tiene más espacios de aparcamiento. El solar tiene un total de 31.000 metros cuadrados. La superficie habitable total es de 580 metros cuadrados. La finca dispone de un pozo propio, más naturalmente está conectada a la red pública de electricidad y agua.
+    </descripcion>
+    <poblacion>Port de Soller</poblacion>
+    <coordenadas>
+      <longitud>2.695739</longitud>
+      <latitud>39.797334</latitud>
+    </coordenadas>
+    <capacidad_personas>5</capacidad_personas>
+    <metros_casa>200</metros_casa>
+    <metros_terreno>600</metros_terreno>
+    <num_habitaciones>5</num_habitaciones>
+    <num_banyos>4</num_banyos>
+    <servicios>
+      <piscina>Piscina</piscina>
+      <television>TV</television>
+      <lavadora>Lavadora</lavadora>
+      <barbacoa>Barbacoa</barbacoa>
+    </servicios>
+    <hora>
+      <entrada>8:00</entrada>
+      <salida>22:00</salida>
+    </hora>
+    <calendario>
+      <registre>
+        <dia>8</dia>
+        <mes>3</mes>
+        <any>2016</any>
+        <ndias>10</ndias>
+      </registre>
+      <registre>
+        <dia>8</dia>
+        <mes>4</mes>
+        <any>2016</any>
+        <ndias>10</ndias>
+      </registre>
+    </calendario>
+    <precio>
+      <enero>200</enero>
+      <febrero>220</febrero>
+      <marzo>220</marzo>
+      <abril>300</abril>
+      <mayo>300</mayo>
+      <junio>350</junio>
+      <julio>350</julio>
+      <agosto>350</agosto>
+      <septiembre>350</septiembre>
+      <octubre>200</octubre>
+      <noviembre>200</noviembre>
+      <diciembre>200</diciembre>
+    </precio>
+    <comentarios>
+      <comentario>
+        <name>Joan</name>
+        <opinion>Muy bien!</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>6</codi>
+    <codi_propietari>5</codi_propietari>
+    <tipo>
+      <finc>1</finc>
+    </tipo>
+    <nombre>Vell de Soller</nombre>
+    <imagenes>
+      <url>img/img_fincas/Vell_Muro/img/img0.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img1.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img2.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img3.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img4.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img5.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img6.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img7.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img8.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img9.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img10.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img11.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img12.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img13.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img14.jpg</url>
+      <url>img/img_fincas/Vell_Muro/img/img15.jpg</url>
+    </imagenes>
+    <descripcion>
+      Cerca de la maravillosa población Caimari y en medio de las montañas y praderas de Tramuntana está situada esta finca en un terreno de 2.000 metros cuadrados.
+
+      El inmueble con una superficie habitable total de 200 metros cuadrados se divide en 3 plantas. En la planta baja se extiende el amplio salón y un dormitorio con baño en suite. La primera planta alberga un salón-comedor lleno de luz con cocina abierta y una chimenea que invita a noches relajadas.
+
+      Además se encuentra en este nivel un dormitorio y un baño completamente equipado. La planta más alta es utilizada por los actuales propietarios como dormitorio principal y ofrece diferentes posibilidades de diseño a los nuevos propietarios.
+
+      El área exterior es encantadora, de diseño mediterráneo con diversas terrazas y una piscina. Para los amantes de la tranquilidad y la naturaleza, esta finca ofrece un interesante punto de partida.
+
+      Caimari fait partie de la commune idyllique de Selva qui compte environ 3000 habitants et se situe dans la montage de la Tramuntana entre Inca et le couvent de Lluc. Font partie de la même commune les villages de Moscari et de Biniamar. Caimar est connue dans toute l’Espagne pour sa production d’huile d’olive.
+
+      Este mapa muestra la situación de la propiedad en la visión general. Mallorca. Hemos recopilado una selección de las Playas, Campos de golf, Puertos Deportivos y Restaurantes más atractivos.
+    </descripcion>
+    <poblacion>Port de Soller</poblacion>
+    <coordenadas>
+      <longitud>2.691474</longitud>
+      <latitud>39.796539</latitud>
+    </coordenadas>
+    <capacidad_personas>3</capacidad_personas>
+    <metros_casa>200</metros_casa>
+    <metros_terreno>400</metros_terreno>
+    <num_habitaciones>2</num_habitaciones>
+    <num_banyos>2</num_banyos>
+    <servicios>
+      <internet>Internet</internet>
+      <limpieza>Limpieza</limpieza>
+      <television>TV</television>
+      <cocina>
+        <tostadora>Tostadora</tostadora>
+        <horno>Horno</horno>
+        <lavavajillas>Lavavajillas</lavavajillas>
+        <cafetera>Cafetera</cafetera>
+        <nevera>Nevera</nevera>
+      </cocina>
+    </servicios>
+    <hora>
+      <entrada>9:00</entrada>
+      <salida>8:00</salida>
+    </hora>
+    <calendario>
+    </calendario>
+    <precio>
+      <enero>50</enero>
+      <febrero>55</febrero>
+      <marzo>55</marzo>
+      <abril>60</abril>
+      <mayo>100</mayo>
+      <junio>110</junio>
+      <julio>120</julio>
+      <agosto>120</agosto>
+      <septiembre>120</septiembre>
+      <octubre>110</octubre>
+      <noviembre>50</noviembre>
+      <diciembre>50</diciembre>
+    </precio>
+    <comentarios>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>7</codi>
+    <codi_propietari>4</codi_propietari>
+    <tipo>
+      <finc>1</finc>
+      <casa>1</casa>
+      <apartamento>1</apartamento>
+    </tipo>
+    <nombre>Villa Carol</nombre>
+    <imagenes>
+      <url>img/img_fincas/Villa_Carol/img/img0.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img1.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img2.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img3.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img4.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img5.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img6.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img7.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img8.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img9.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img10.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img11.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img12.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img13.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img14.jpg</url>
+      <url>img/img_fincas/Villa_Carol/img/img15.jpg</url>
+    </imagenes>
+    <descripcion>
+      Esta villa señorial se encuentra en una excelente ubicación expuesta junto al mar en Colonia Sant Jordi, un pueblo solicitado por un público internacional de nivel vecino a la playa natural famosa de Es Trenc.
+
+      Ya que la villa mediterránea se encuentra en un callejón sin salida, se puede disfrutar del murmullo del mar sin distracciones.
+
+      La superficie habitable de 311 metros cuadrados se distribuye en 2 plantas más el sótano y ofrece 4 dormitorios en total, respectivamente con baños en suite y está equipado con madera de teca valiosa.
+
+      Se accede a la villa de ensueño por una entrada generosa con una galería en forma de torre que lleva al salón/comedor luminoso con chimenea auténtica, a la cocina con coladuría tal como a un dormitorio cómodo con baño privado.
+
+      En la planta superior encontramos la suite principal con chimenea propia e interiorismo impresionante de madera, tal como 3 dormitorios más.
+
+      Todas las habitaciones, tanto en la planta baja como en la planta alta, dan a una terraza cubierta amplia con vistas impresionantes al mar abierto, la isla de Cabrera, tal como a lo largo de la costa sur hasta Cala Pi.
+
+      El sótano ofrece mucho espacio para varios vehículos; una rampa permite guardar una barca, que puede ser llevada al agua directamente delante de la casa.
+
+      Las demás habitaciones ofrecen espacio para una sauna, un gimnasio, un cine privado u otros usos.
+
+      Desde el jardín de fácil cuidado se puede acceder a través de unos escalones directamente al mar y tomar un baño refrescante.
+
+      Existe la posibilidad de hacer una piscina privada.
+
+      El origen de esta villa de familia en muy buen estado y cuidado es de los año 70. La casa necesita una actualización para poder estar a la altura de los requisitos de un estilo de vida moderno.
+
+      La ubicación única y excelente de este inmueble ofrece una oportunidad perfecta para quienes buscan una residencia vacacional representativa en un entorno de ensueño.
+    </descripcion>
+    <poblacion>Cala Pi</poblacion>
+    <coordenadas>
+      <longitud>2.848988</longitud>
+      <latitud>39.366392</latitud>
+    </coordenadas>
+    <capacidad_personas>5</capacidad_personas>
+    <metros_casa>400</metros_casa>
+    <metros_terreno>700</metros_terreno>
+    <num_habitaciones>5</num_habitaciones>
+    <num_banyos>3</num_banyos>
+    <servicios>
+      <internet>Internet</internet>
+      <piscina>Piscina</piscina>
+      <climatizacion>Climatizacion</climatizacion>
+      <television>TV</television>
+      <barbacoa>Barbacoa</barbacoa>
+      <cocina>
+        <tostadora>Tostadora</tostadora>
+        <horno>Horno</horno>
+        <lavavajillas>Lavavajillas</lavavajillas>
+        <cafetera>Cafetera</cafetera>
+        <microondas>Microonas</microondas>
+        <nevera>Nevera</nevera>
+        <congelador>Congelador</congelador>
+      </cocina>
+    </servicios>
+    <hora>
+      <entrada>14:00</entrada>
+      <salida>10:00</salida>
+    </hora>
+    <calendario>
+      <registre>
+        <dia>4</dia>
+        <mes>5</mes>
+        <any>2016</any>
+        <ndias>5</ndias>
+      </registre>
+    </calendario>
+    <precio>
+      <enero>400</enero>
+      <febrero>660</febrero>
+      <marzo>705</marzo>
+      <abril>705</abril>
+      <mayo>800</mayo>
+      <junio>800</junio>
+      <julio>800</julio>
+      <agosto>800</agosto>
+      <septiembre>800</septiembre>
+      <octubre>800</octubre>
+      <noviembre>650</noviembre>
+      <diciembre>500</diciembre>
+    </precio>
+    <comentarios>
+      <comentario>
+        <name>Sebastia</name>
+        <opinion>Muy buena!</opinion>
+        <valoracion>4</valoracion>
+      </comentario>
+      <comentario>
+        <name>Sebastia</name>
+        <opinion>Muy mal</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+    </comentarios>
+  </finca>
+</fincas>

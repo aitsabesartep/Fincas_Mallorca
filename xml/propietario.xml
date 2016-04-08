@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE propietarios SYSTEM "propietario.dtd">
+<propietarios>
+	<propietario>
+		<fincas>
+			<codi_finca></codi_finca>
+		</fincas>
+		<nombre></nombre>
+		<mail></mail>
+		<tel></tel>
+		<cc></cc>
+	</propietario>
+</propietarios>

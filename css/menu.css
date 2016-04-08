@@ -1,0 +1,52 @@
+/*Menu*/
+
+nav#nav1{
+	background-color: orange;
+	border: inherit;
+	border-color: white;
+}
+
+div#navhead{
+	background-color: orange;
+	border: inherit;
+
+}
+
+button#tg{
+	background-color: orange;
+    border-color: white;
+}
+
+div#menu{
+	border-color: white;
+}
+
+a#item_text:hover{
+  background-color: #337AB7;
+  cursor: pointer;
+}
+
+a#item_text{
+	color: white;
+	/*font-weight: bold;*/
+	font-size: 25px;
+}
+
+a#item_fincas{
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.menu_active{
+	background-color: #337AB7;
+}
+
+a, a:active, a:focus, button{
+outline: none;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}

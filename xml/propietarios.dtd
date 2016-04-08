@@ -1,0 +1,9 @@
+<!ELEMENT propietarios (propietario*)>
+<!ELEMENT propietario (fincas, nombre, mail, tel, cc)>
+<!ELEMENT fincas (codi_finca*)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT codi_finca (#PCDATA)>

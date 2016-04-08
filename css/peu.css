@@ -1,0 +1,10 @@
+footer#peu{
+  background: rgba(255, 166, 0, 0.4)!important;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+p#textPeu{
+  color: #337AB7;
+}

@@ -1,0 +1,65 @@
+<!ELEMENT fincas (finca*)>
+<!ELEMENT finca (codi, codi_propietari, tipo, nombre, imagenes, descripcion, poblacion, coordenadas, capcidad_personas, metros_casa, metros_terreno, num_habitaciones, num_banyos, servicios?, hora, calendario, precio, comentarios?)>
+
+<!ELEMENT tipo (finc?, casa?, apartamento?)>
+<!ELEMENT imagenes (url+)>
+<!ELEMENT coordenadas (longitud, latitud)>
+<!ELEMENT servicios (internet?, piscina?, limpieza?, climatizacion?, television?, lavadora?, barbaco?, cocina)>
+<!ELEMENT cocina (tostadora?, horno?, lavavajillas?, cafetera?, microondas?, nevera?, congelador?)>
+<!ELEMENT hora (entrada, salida)>
+<!ELEMENT calendario (registre*)>
+<!ELEMENT registre (dia, mes, any, ndias)>
+<!ELEMENT precio (enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre)>
+<!ELEMENT comentarios (comentario*)>
+<!ELEMENT comentario (name, opinon, valoracion)>
+
+<!ELEMENT codi (#PCDATA)>
+<!ELEMENT codi_propietari (#PCDATA)>
+<!ELEMENT finc (#PCDATA)>
+<!ELEMENT casa (#PCDATA)>
+<!ELEMENT apartament (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT capacidad_personas (#PCDATA)>
+<!ELEMENT metros_casa (#PCDATA)>
+<!ELEMENT metros_terreno (#PCDATA)>
+<!ELEMENT num_habitaciones (#PCDATA)>
+<!ELEMENT num_banyos (#PCDATA)>
+<!ELEMENT internet (#PCDATA)>
+<!ELEMENT piscina (#PCDATA)>
+<!ELEMENT limpieza (#PCDATA)>
+<!ELEMENT climatizacion (#PCDATA)>
+<!ELEMENT television (#PCDATA)>
+<!ELEMENT lavadora (#PCDATA)>
+<!ELEMENT barbacoa (#PCDATA)>
+<!ELEMENT tostadora (#PCDATA)>
+<!ELEMENT horno (#PCDATA)>
+<!ELEMENT lavavajillas (#PCDATA)>
+<!ELEMENT cafetera (#PCDATA)>
+<!ELEMENT microonadas (#PCDATA)>
+<!ELEMENT nevera (#PCDATA)>
+<!ELEMENT congelador (#PCDATA)>
+<!ELEMENT entrada (#PCDATA)>
+<!ELEMENT salida (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT ndias (#PCDATA)>
+<!ELEMENT enero (#PCDATA)>
+<!ELEMENT febrero (#PCDATA)>
+<!ELEMENT marzo (#PCDATA)>
+<!ELEMENT abril (#PCDATA)>
+<!ELEMENT mayo (#PCDATA)>
+<!ELEMENT junio (#PCDATA)>
+<!ELEMENT julio (#PCDATA)>
+<!ELEMENT agosto (#PCDATA)>
+<!ELEMENT septiembre (#PCDATA)>
+<!ELEMENT octubre (#PCDATA)>
+<!ELEMENT noviembre (#PCDATA)>
+<!ELEMENT diciembre (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT opinion (#PCDATA)>
+<!ELEMENT valoracion (#PCDATA)>

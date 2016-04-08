@@ -1,0 +1,208 @@
+div#cos_fincas{
+  margin-top: 80px;
+}
+
+div#target{
+  display: none;
+}
+
+div#cuadro_finca{
+  margin-top: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: orange;
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+ul#caracteristiques{
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+div#info{
+  margin-top: 15px;
+}
+div#preu{
+  margin-top: 15px;
+}
+
+img#img_finca{
+  border-radius: 10px;
+}
+
+div#preu{
+  margin-top: 0px;
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+span#filtro{
+  font-style: normal;
+}
+
+
+hr{
+  color: #337AB7;
+  background-color: #337AB7;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+  span#desde{
+    font-size: 10px;
+  }
+
+  h3#preui{
+    width: 100%;
+    font-size: 15px;
+  }
+  a#preui{
+    font-size: 15px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 15px;
+    color: white;
+    text-decoration:none;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    span#desde{
+    font-size: 12px;
+  }
+
+  h3#preui{
+    width: 100%;
+    font-size: 18px;
+  }
+  a#preui{
+    font-size: 18px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 18px;
+    color: white;
+    text-decoration:none;
+  }
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  h3#preui{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  span#desde{
+    font-size: 12px;
+  }
+  a#preui{
+    font-size: 20px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+  }
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+  span#desde{
+  font-size: 12px;
+  }
+
+  h3#preui{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  a#preui{
+    font-size: 20px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+  }
+}
+
+div#filter-panel{
+  padding-left: 0px;
+}
+
+div#filterpanel{
+  background-color: rgb(235, 237, 237);
+}
+
+.mouse_select{
+  cursor: pointer;
+}
+
+div#recuadre_serveis{
+  border-color: #ccc;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 14px !important;
+  background-color: white;
+}
+
+ .serveis_fincas{
+  margin: 3px !important;
+ }
+
+.carac{
+  width: 100%;
+}
+
+.sel_fincas{
+  width: 100% !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sel_fincas1{
+  width: 100% !important;
+}
+div#carac_finques{
+  height: 100% !important;
+}
+
+.calendari_fincas{
+  width: 100%;
+}
+
+div#element1{
+  width: 100%;
+}
+
+div#data{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.data_fincas{
+  background: white !important;
+}
+
+.max{
+  width: 100% !important;
+}
+
+button#boto_filtrar{
+  margin-top: 15px;
+  background-color: rgb(92, 184, 92);
+  color: white;
+}
