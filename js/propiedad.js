@@ -1,9 +1,11 @@
 var codi_finca;
 var preu_mensual = [];
+var monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var dayNames = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
 function initCal(d)
 {
     var dies = d;
-    console.log(dies);
     $('#date-range12').html = '';
     var date_range = $('#date-range12').dateRangePicker({
         inline:true,
@@ -41,6 +43,7 @@ function initCal(d)
         $('#entrada').val(str.substr(0, str.indexOf("#")));
         $('#salida').val(str.substr(str.indexOf("#")+1), str.length);
         calcularImporte();
+        getRSS();
     });
 }
 
@@ -138,6 +141,7 @@ function cal(codi) {
             pintarCalendari(xhttp, codi);
             mitjaVal(xhttp, codi);
             initCal(dies);
+            initGrafic(xhttp, codi);
         }
     };
     xhttp.open("GET", "xml/fincas.xml", true);
@@ -362,4 +366,110 @@ function calcularImporte(){
     }
     $('#precio').val(importe+' euros');
 
+}
+
+function getRSS(){
+    $.ajax({
+        url: 'php/rss.php',
+        success: function(data) {
+            previsionDias(data);
+        }
+    });
+}
+
+function previsionDias(data){
+    var xmlDoc = jQuery.parseXML(data);
+    var dias = xmlDoc.getElementsByTagName('pronostico_dias')[0].getElementsByTagName('dia');
+    var entrada = $('#entrada').val();
+    var sortida = $('#salida').val();
+    var date_entrada = moment(entrada, "DD/MM/YYYY").toDate();
+    var date_salida = moment(sortida, "DD/MM/YYYY").toDate();
+    var de = new Date(date_entrada);
+    var ds = new Date(date_salida);
+
+    var e = parseInt(de.getTime());
+    var s = parseInt(ds.getTime());
+    var timeDiff = Math.abs(s - e);
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    diffDays = diffDays + 1;
+    $('#cos_modal').html('');
+    var date_dias = [];
+    for (i = 0; i < dias.length; i++) {
+        date_dias[i] = new Date(dias[i].getElementsByTagName('fecha')[0].textContent);
+    }
+    for (i = 0; i < dias.length; i++) {
+        if (de.getTime() >= date_dias[0].getTime() && de.getTime() <= date_dias[6].getTime()) {
+            $('#cos_modal').append('<div class="col-lg-6">'+
+            '<div class="col-lg-12"><strong>'+dayNames[de.getDay()]+', '+ de.getDate()+' de '+ monthNames[de.getMonth()]+' de '+de.getFullYear()+
+            '</strong></div>'+
+            '<div class="col-lg-12"><img alt="" height="70" src="'+dias[i].getElementsByTagName('icono')[0].textContent+'" width="70"></img></div><div class="col-lg-12"><strong>'+dias[i].getElementsByTagName('texto')[0].textContent+'</strong></div>'+
+            '<div class="col-lg-12">Minima: '+dias[i].getElementsByTagName('temp_minima')[0].textContent+' C</div><div class="col-lg-12">Maxima '+dias[i].getElementsByTagName('temp_maxima')[0].textContent+' C</div>'+
+            '<div class="col-lg-12">Humedad: '+dias[i].getElementsByTagName('humedad')[0].textContent+' %</div><div class="col-lg-12" style=";margin-bottom: 20px">Viento '+dias[i].getElementsByTagName('viento')[0].textContent+' Km/h</div>'+
+            '</div>');
+        }
+        de.setDate(de.getDate() + 1);
+    }
+}
+
+function initGrafic(xml, codi){
+    var xmlDoc = xml.responseXML;
+    var fincas = xmlDoc.getElementsByTagName("finca");
+    var finca;
+    var i;
+
+    for (i = 0; i < fincas.length; i++) {
+        if (parseInt(fincas[i].getElementsByTagName('codi')[0].textContent) == codi) {
+            finca = fincas[i];
+            break
+        }
+    }
+    var calendario = (finca.getElementsByTagName('calendario')[0]);
+    var registres = calendario.getElementsByTagName('registre');
+    var mesos = [0,0,0,0,0,0,0,0,0,0,0,0];
+    
+    for (i = 0; i < registres.length; i++) {
+        var dia = parseInt(registres[i].getElementsByTagName('dia')[0].textContent);
+        var mes = parseInt(registres[i].getElementsByTagName('mes')[0].textContent);
+        //Restam -1 xq es més comença a 0
+        mes = mes - 1;
+        var any = parseInt(registres[i].getElementsByTagName('any')[0].textContent);
+        var cuants = parseInt(registres[i].getElementsByTagName('ndias')[0].textContent);
+        d = new Date(any, mes, dia);
+        var idx;
+        for (idx = 1; idx <= cuants; idx++) {
+            mesos[d.getMonth()] = mesos[d.getMonth()] + 1;
+            d.setDate(d.getDate() + 1);
+        }
+    }
+    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.className = 'char';
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '300');
+    svg.setAttribute('aria-labelledby', 'title desc');
+    svg.setAttribute('role', 'img');
+    var svgNS = svg.namespaceURI;
+    var y = 5;
+
+    for (i = 0; i < mesos.length; i++) {
+        var total = (mesos[i]*85)/30;
+        var g = document.createElementNS(svgNS,'g');
+        var rect = document.createElementNS(svgNS,'rect');
+        var text = document.createElementNS(svgNS,'text');
+        g.className = 'bar';
+        rect.setAttribute('width',total+'%');
+        rect.setAttribute('height',10);
+        rect.setAttribute('y',y);
+        rect.setAttribute('fill', "rgb(51,122,183)");
+        rect.setAttribute('x',80);
+        text.setAttribute('dy','.35em');
+        text.setAttribute('y',(y + 4));
+        text.setAttribute('x',0);
+        text.innerHTML = monthNames[i];
+        text.setAttribute('fill', "orange");
+        text.setAttribute("style", "font-weight: lighter;");
+        svg.appendChild(rect);
+        svg.appendChild(text);
+        y = y + 20;
+    }
+    document.getElementById('svg').appendChild(svg);
 }

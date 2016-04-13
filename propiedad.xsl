@@ -96,6 +96,7 @@
                     <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Localización</a>
                 </li>
                 <li role="presentation"><a id="com" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Comentarios</a></li>
+                <li role="presentation"><a href="#reservas_mensuales" aria-controls="reservas_mensuales" role="tab" data-toggle="tab">Reservas mensuales</a></li>
               </ul>
 
               <!-- Tab panes -->
@@ -103,6 +104,10 @@
                 <div role="tabpanel" class="tab-pane active" id="home">
                     <div>
                         <xsl:value-of select="descripcion"/>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="reservas_mensuales">
+                    <div id="svg" style="padding-top: 10px;">
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="profile">
@@ -222,8 +227,29 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-sm-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                                             <input class="form-control" id="dni" name="dni" placeholder="DNI" value=""></input>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <button id="bt_tiempo" data-toggle="modal" data-target="#modal" type="button" class="btn btn-primary buton_alert">Ver el tiempo</button>
+                                        </div>
+                                        <div class="modal fade" id="modal" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"></button>
+                                                        <h3 class="modal-title">Previsión para las fechas seleccionadas</h3>
+                                                        <br></br>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div id="cos_modal" class="row"></div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group">

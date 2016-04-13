@@ -64,6 +64,12 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
+      <registre>
+        <dia>2</dia>
+        <mes>5</mes>
+        <any>2016</any>
+        <ndias>17</ndias>
+      </registre>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -691,6 +697,18 @@
         <mes>5</mes>
         <any>2016</any>
         <ndias>5</ndias>
+      </registre>
+      <registre>
+        <dia>4</dia>
+        <mes>6</mes>
+        <any>2016</any>
+        <ndias>5</ndias>
+      </registre>
+      <registre>
+        <dia>9</dia>
+        <mes>5</mes>
+        <any>2016</any>
+        <ndias>21</ndias>
       </registre>
     </calendario>
     <precio>

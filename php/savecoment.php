@@ -11,8 +11,6 @@
     $dom->loadXML($fincas->asXML());
     $dom->saveXML();
     $dom->save('../xml/fincas.xml');
-
-    //Falta refrescar pagina
 ?>
 
 
