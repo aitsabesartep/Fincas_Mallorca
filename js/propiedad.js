@@ -398,6 +398,40 @@ function previsionDias(data){
         date_dias[i] = new Date(dias[i].getElementsByTagName('fecha')[0].textContent);
     }
     for (i = 0; i < dias.length; i++) {
+        if (de.getTime() <= date_dias[i].getTime() && ds.getTime() >= date_dias[i].getTime()) {
+            $('#cos_modal').append('<div class="col-lg-6">'+
+            '<div class="col-lg-12"><strong>'+dayNames[date_dias[i].getDay()]+', '+ date_dias[i].getDate()+' de '+ monthNames[date_dias[i].getMonth()]+' de '+date_dias[i].getFullYear()+
+            '</strong></div>'+
+            '<div class="col-lg-12"><img alt="" height="70" src="'+dias[i].getElementsByTagName('icono')[0].textContent+'" width="70"></img></div><div class="col-lg-12"><strong>'+dias[i].getElementsByTagName('texto')[0].textContent+'</strong></div>'+
+            '<div class="col-lg-12">Minima: '+dias[i].getElementsByTagName('temp_minima')[0].textContent+' C</div><div class="col-lg-12">Maxima '+dias[i].getElementsByTagName('temp_maxima')[0].textContent+' C</div>'+
+            '<div class="col-lg-12">Humedad: '+dias[i].getElementsByTagName('humedad')[0].textContent+' %</div><div class="col-lg-12" style=";margin-bottom: 20px">Viento '+dias[i].getElementsByTagName('viento')[0].textContent+' Km/h</div>'+
+            '</div>');
+        }
+    }
+}
+
+/* ---- FUNCIO ANTIGA ---- */
+/*function previsionDias(data){
+    var xmlDoc = jQuery.parseXML(data);
+    var dias = xmlDoc.getElementsByTagName('pronostico_dias')[0].getElementsByTagName('dia');
+    var entrada = $('#entrada').val();
+    var sortida = $('#salida').val();
+    var date_entrada = moment(entrada, "DD/MM/YYYY").toDate();
+    var date_salida = moment(sortida, "DD/MM/YYYY").toDate();
+    var de = new Date(date_entrada);
+    var ds = new Date(date_salida);
+
+    var e = parseInt(de.getTime());
+    var s = parseInt(ds.getTime());
+    var timeDiff = Math.abs(s - e);
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    diffDays = diffDays + 1;
+    $('#cos_modal').html('');
+    var date_dias = [];
+    for (i = 0; i < dias.length; i++) {
+        date_dias[i] = new Date(dias[i].getElementsByTagName('fecha')[0].textContent);
+    }
+    for (i = 0; i < dias.length; i++) {
         if (de.getTime() >= date_dias[0].getTime() && de.getTime() <= date_dias[6].getTime()) {
             $('#cos_modal').append('<div class="col-lg-6">'+
             '<div class="col-lg-12"><strong>'+dayNames[de.getDay()]+', '+ de.getDate()+' de '+ monthNames[de.getMonth()]+' de '+de.getFullYear()+
@@ -409,7 +443,7 @@ function previsionDias(data){
         }
         de.setDate(de.getDate() + 1);
     }
-}
+}*/
 
 function initGrafic(xml, codi){
     var xmlDoc = xml.responseXML;
